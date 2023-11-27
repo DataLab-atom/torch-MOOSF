@@ -14,7 +14,7 @@ pip install -r requirements.txt
 ```
 python main.py --ce --bs --LSF
 python main.py --bs --kps --LSF
-python main.py --ce_drw --kps --LSF
-python main.py --bs --kps --LSF
+python main.py --ce_drw --ldam_drw --LSF
+python main.py --kps --shike --LSF
 ```
 
