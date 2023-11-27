@@ -1,0 +1,62 @@
+---> ---cifar100---
+---> Argument
+    └> network     : resnet32
+    └> epochs      : 200
+    └> batch_size  : 128
+    └> update_epoch: 1
+    └> lr          : 0.1
+    └> momentum    : 0.9
+    └> wd          : 0.0002
+    └> nesterov    : False
+    └> scheduler   : warmup
+    └> warmup      : 5
+    └> aug_prob    : 0.5
+    └> cutout      : False
+    └> cmo         : False
+    └> posthoc_la  : False
+    └> cuda        : False
+    └> randaug     : False
+    └> num_test    : 8
+    └> verbose     : False
+    └> out         : ./results/cifar100/ce@N_500_ir_100/
+    └> data_dir    : /input/dataset/
+    └> workers     : 4
+    └> seed        : None
+    └> gpu         : None
+    └> dataset     : cifar100
+    └> num_max     : 500
+    └> imb_ratio   : 100
+    └> loss_fn     : ce
+    └> num_experts : 3
+    └> num_class   : 100
+---> ---cifar100---
+---> Argument
+    └> network     : resnet32
+    └> epochs      : 200
+    └> batch_size  : 128
+    └> update_epoch: 1
+    └> lr          : 0.1
+    └> momentum    : 0.9
+    └> wd          : 0.0002
+    └> nesterov    : False
+    └> scheduler   : warmup
+    └> warmup      : 5
+    └> aug_prob    : 0.5
+    └> cutout      : False
+    └> cmo         : False
+    └> posthoc_la  : False
+    └> cuda        : False
+    └> randaug     : False
+    └> num_test    : 8
+    └> verbose     : False
+    └> out         : ./results/cifar100/ce@N_500_ir_100/
+    └> data_dir    : /input/dataset/
+    └> workers     : 4
+    └> seed        : None
+    └> gpu         : None
+    └> dataset     : cifar100
+    └> num_max     : 500
+    └> imb_ratio   : 100
+    └> loss_fn     : ce
+    └> num_experts : 3
+    └> num_class   : 100
