@@ -7,7 +7,7 @@ class Weight_acc:
         self.tasks = tasks
         self.num_class = num_class
         self.weigh = {t:torch.ones(num_class) for t in tasks}  
-        self.max_weight_task = [tasks[0] for i in range(num_class)] # 直接记录每个类别中acc最大的那一个task  
+        self.max_weight_task = [tasks[0] for i in range(num_class)] 
         self.weigh_save_list = {t:[] for t in tasks}  
         self.weigh_save_list['max'] = []
         self.weigh_save_list['conflict'] = np.zeros([400,2])
