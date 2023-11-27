@@ -14,8 +14,8 @@ class Chebyshev:
         optimizer.step()
     '''
     def __init__(self,mu = 0.1):
-        self.losses = [] # 存储历史信息
-        self.item = None # 指向用于反向传播的 那一个损失
+        self.losses = [] 
+        self.item = None 
         self.mu = mu
     def append(self,loss):
         lossdata = torch.tensor([i.item() for i in loss]) 
@@ -26,13 +26,13 @@ class Chebyshev:
         #     self.item = sum(loss)
         #     return 
         
-        # temp = torch.abs(lossdata - self.losses[-1])/self.losses[-1] # 求取一个在这个损失函数上的变化比
+        # temp = torch.abs(lossdata - self.losses[-1])/self.losses[-1] 
         # w = torch.exp(temp/self.mu) / (temp/self.mu).sum()
         # temp *= w
         # temp = temp*2/temp.sum()
-        # self.losses.append(lossdata) # 保存一下历史信息
+        # self.losses.append(lossdata) 
         max_index = torch.argmax(lossdata)
-        self.item = loss[max_index]   # 构造反向传播时使用的损失
+        self.item = loss[max_index]  
     
     def backward(self):
         self.item.backward()
