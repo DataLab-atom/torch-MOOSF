@@ -73,7 +73,7 @@ def parse_args(run_type = 'terminal'):
 
 
     #LSF
-    parser.add_argument('--LSF',action='store_true',default=False)
+    parser.add_argument('--MOOSF',action='store_true',default=False)
 
 
     # large
@@ -94,7 +94,7 @@ def parse_args(run_type = 'terminal'):
         os.environ['CUDA_DEVICE_ORDER'] = 'PCI_BUS_ID'
         os.environ['CUDA_VISIBLE_DEVICES'] = args.gpu
     
-    if args.LSF:
+    if args.MOOSF:
         args.pcg = True
         args.pla = True
         args.out_cut = True
